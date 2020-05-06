@@ -33,7 +33,7 @@ function showSelect() {
                 break;
    }
     function changeImage(attr){
-        console.log('Llame una funciont')
+        
         var img = document.getElementById("showroom");
        
             img.src = `img/${attr}.png`;
