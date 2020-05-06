@@ -7,27 +7,27 @@ function showSelect() {
     console.log( cod );
 
    switch ( cod ) {
-        case 'negro-rojo': console.log('hola bonito');
+        case 'negro-rojo': ;
                 changeImage(cod);
                 changeColor("#DE2F46", "#FF3650")
                 break;
-        case 'blanco-rojo': console.log('blanco-rojo');
+        case 'blanco-rojo': ;
                 changeImage(cod);
                 changeColor("#e3e3e3", "#b83349")
                 break;
-        case 'negro-azul': console.log('negro-azul')
+        case 'negro-azul': 
                 changeImage(cod);
                 changeColor("#413c39", "#a4e2eb")
                 break;
-        case 'blanco-negro': console.log('blanco-negro')
+        case 'blanco-negro':
                 changeImage(cod);
                 changeColor("#e3e3e3", "#413c39")
                 break;
-        case 'space': console.log('space')
+        case 'space': 
                 changeImage(cod);
                 changeColor("#413c39", "#445670")
                 break;
-        case 'vinotinto': console.log('vinotinto')
+        case 'vinotinto': 
                 changeImage(cod);
                 changeColor("#1a0504", "#72303e")
                 break;
@@ -35,10 +35,10 @@ function showSelect() {
     function changeImage(attr){
         console.log('Llame una funciont')
         var img = document.getElementById("showroom");
-        console.log(img);
+       
             img.src = `img/${attr}.png`;
             img.setAttribute( "src", [`img/${attr}.png`]);
-            console.log(img.src = `img/${attr}.png`)
+            
     }   
 
     function changeColor (Color1, Color2) {
