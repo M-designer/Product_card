@@ -1,0 +1,194 @@
+/*
+    Orden
+    
+    1. Position
+    2. Box model
+    3. Typographic
+    4. Visual
+    5. Miscelaneos (experimentales "prefijos")
+
+    (blanco-negro
+        body #e3e3e3
+        tennis #413c39
+    )
+    (blanco -rojo
+       body #e3e3e3
+       tennis  #b83349
+    )
+
+    (space
+        body #413c39
+        tennis #445670
+    )
+
+    ( negro - azul
+        body #413c39
+        tennis #a4e2eb
+    )
+
+    ( vino tinto 
+        body #1a0504
+        tennis #72303e
+    )
+
+*/
+
+
+*{
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: #DE2F46;
+}
+
+.container {
+    position: relative;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    width: 900px;
+    height: 600px;
+    margin: 20px;
+    background-color: #fff;
+}
+
+.container .imgBox {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 50%;
+    height: 100%;
+    background-color: #FF3650;
+}
+
+.container .imgBox img {
+    position: relative;
+    left: -50px;
+    width: 700px;
+    transform: rotate(-30deg);
+}
+
+.container .imgBox:before {
+    position: absolute;
+    top: 20px;
+    left: 20px;
+    font-size: 8em;
+    font-weight: 800;
+    color: #000;
+    content: 'nike';
+    opacity: 0.1;
+}
+
+.container .details {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width:50%;
+    height: 100%;
+    box-sizing: border-box;
+    padding: 40px;
+}
+
+.container .details h2 {
+    margin-top: 45px;
+    margin-bottom: 25px;
+    font-size: 2.5em;
+    line-height: 0.8em;
+    color: #444;
+}
+.container .details h2 span {
+    font-size: 0.4em;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    color: #999;
+}
+
+.container .details p {
+    max-width: 85%;
+    margin-left: 15%;
+    margin-bottom: 20px;
+    color: #333;
+    font-size: 15px;
+}
+
+.container .details h3 {
+    float: left;
+    font-size: 2.5em;
+    color: #2a2a2a;
+}
+
+.container .details .details--option {
+    display: block;
+    width: 100%;
+    padding: 20px 0;
+}
+
+.container .details .details--price {
+    display: block;
+    width: 100%;
+}
+
+.container .details .details--option select {
+    padding: 10px;
+    color: #2a2a2a;
+    font-weight: 600;
+    border-radius: 5px;
+    background-color: #F8F8FF;
+    border-color: #F7FBFF;
+}
+
+.container .details button {
+    margin-top: 5px;
+    float: right;
+    padding: 15px 20px;
+    font-size: 16px;
+    color: white;
+    letter-spacing: 1px;
+    font-weight: 600;
+    text-transform: uppercase;
+    border-radius: 40px;
+    background-color: #de2f46;
+    border: none;
+    cursor: pointer;
+}
+
+
+@media (max-width: 1080px) {
+    .container {
+        height: auto;
+    }
+
+    .container .imgBox{
+        height: auto;
+        padding: 40px;
+        width: 100%;
+        box-sizing: border-box;
+        text-align: center;
+    }
+
+    .container .imgBox img {
+        left: initial;
+        max-width: 100%;
+        transform: rotate(0deg);
+    }
+
+    .container .details {
+        width: 100%;
+        height: auto;
+        padding: 20px;
+    }
+
+    .container .details p {
+        max-width: 100%;
+        margin-left: 0;
+    }
+}
