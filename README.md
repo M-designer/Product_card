@@ -1,6 +1,6 @@
 # Product Card interactive
 
-Realizado para el reto platzi de Product card.
+I did for a Challenge in platzi.
 
 ## Responsive
 
